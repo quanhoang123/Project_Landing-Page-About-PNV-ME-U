@@ -8,11 +8,42 @@
 
 -- 5. Các bước thực hiện.
 -- Đối với folder back-end
-+ git clone https://github.com/quanhoang123/Project_Landing-Page-About-PNV-ME-U.git
-+ git ckeckout main để clone project zề (nếu nó ở bên nhánh master)
++ $  git clone https://github.com/quanhoang123/Project_Landing-Page-About-PNV-ME-U.git
++ $ git ckeckout main để clone project zề (nếu nó ở bên nhánh master)
 
 + cd back-end/fron-end: Truy cập vào 2 folder để dùng
 + Đối với /back-end
   1. php artisan serve
 + Đối với /fron-end
   2. npm start
+
+
+Hướng dẫn git branch
+0. $ git branch : Kiểm tra nhánh trong dự án
+* master
+* main 
+1. $ git branch namebranch : Tạo nhánh của mình
+2. $ git checkout namebranch: Chuyển qua nhánh của mình
+3. $ git add. 
+   $ git commit -m "content text" : Thực hiện commit trên nhánh mới
+4. $ git log --pretty=oneline : Xem lịch sử commit 
+
+=> Những câu git cơ bản:
+
+Đẩy bài lên nhánh của mịnh:
+
+1. $ git clone https://github.com/quanhoang123/Project_Landing-Page-About-PNV-ME-U.git
+2. $ git branch : Kiểm tra nhánh trong dự án
+    * master
+    * main 
+    $ git branch namebranch : Tạo nhánh của mình
+    $ git checkout namebranch: Chuyển qua nhánh của mình
+3. Thực hiện chỉnh sửa.
+4. Ra folder Project_Landing-Page-About-PNV-ME-U:
++  $ git checkout yourbranch
++  $ git add .
++  $ git commit -m "your commit"
++  $ git push origin yourbranch (example: nhánh bạn tên là mai thì $ git push origin mai):
+PNVD167+Administrator@PNVD167 MINGW64 /c/xampp/htdocs/Project_Landing-Page-About-PNV-ME-U (main ---> your branch need push not master or main)
+
+
