@@ -6,7 +6,7 @@ class Header extends Component {
             <div>
                 <div className="navbar navbar-expand-lg bg-light navbar-light">
                     <div className="container-fluid">
-                        <a href="index.html" className="navbar-brand">DevFolio</a>
+                        <a href="index.html" className="navbar-brand">PNV</a>
                         <button type="button" className="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                             <span className="navbar-toggler-icon" />
                         </button>
@@ -47,7 +47,7 @@ class Header extends Component {
                             </div>
                             <div className="col-sm-12 col-md-6 d-none d-md-block">
                                 <div className="hero-image">
-                                    <img src="img/hero.png" alt="Hero Image" />
+                                    {/* <img src="img/hero.png" alt="Hero Image" /> */}
                                 </div>
                             </div>
                         </div>
