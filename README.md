@@ -11,11 +11,13 @@
 + $  git clone https://github.com/quanhoang123/Project_Landing-Page-About-PNV-ME-U.git
 + $ git ckeckout main để clone project zề (nếu nó ở bên nhánh master)
 
-+ cd back-end/fron-end: Truy cập vào 2 folder để dùng
++ cd back-end/fron-end: Truy cập vào 2 folder để dùng:
 + Đối với /back-end
+  1. composer instal : cài gói thư viện composer để khởi tạo serve
   1. php artisan serve
 + Đối với /fron-end
-  2. npm start
+  1. npm insall      : cài đặt gói # npm để khởi tạo server
+  1. npm start
 
 
 Hướng dẫn git branch
