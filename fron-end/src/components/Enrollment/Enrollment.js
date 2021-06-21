@@ -1,17 +1,27 @@
 import React, { Component } from 'react';
-
+import Share from './Share';
 class Enrollment extends Component {
     render() {
-        return (
+        return (<div>
             <div className="portfolio" id="portfolio">
             <div className="container">
+              
               <div
                 className="section-header text-center wow zoomIn"
                 data-wow-delay="0.1s"
               >
                 <p>Tuyển sinh PNV</p>
+                <div>
+                Hàng năm, từ tháng Một đến tháng Tám, đội ngũ tuyển sinh của Passerelles numériques Việt Nam đi đến bảy tỉnh thành miền Trung Việt Nam (Quảng Bình, Quảng Trị, Đà Nẵng, Quảng Nam, Quảng Ngãi, Kon Tum, Bình Định), thực hiện một quy trình tuyển sinh chặt chẽ gồm 4 bước để chọn ra những thanh thiếu niên có hoản cảnh khó khăn nhưng tài năng và có ý chí vươn lên .
+
+Với sự hỗ trợ từ Hội Khuyến học ở các tỉnh thành, PN Việt Nam được giới thiệu đến các trường THPT địa phương và tạo điều kiện thuận lợi cho các hoạt động tuyển sinh của PN tại các tỉnh thành.
+
+Chúng tôi luôn nỗ lực để có thể duy trì được tỉ lệ sinh viên nữ trong mỗi khóa không dưới 50%. Tuy nhiên, trên tất cả, ưu tiên hàng đầu vẫn được dành cho những đối tượng có hoàn cảnh khó khăn nhất.
+                </div>
                 <h2>Kế hoạch tuyển sinh 2022</h2>
               </div>
+
+             
               <div className="row">
                 <div className="col-12">
                   <ul id="portfolio-filter">
@@ -153,7 +163,7 @@ class Enrollment extends Component {
                 >
                   <div className="portfolio-wrap">
                     <div className="portfolio-img">
-                      <img src="imgPNV/img1.jpg" alt="Image" style={{height:"45vh", width:"60vh"}} />
+                      <img src="imgPNV/img1.jpg" alt="Image" style={{height:"40vh", width:"60vh"}} />
                     </div>
                    
                   </div>
@@ -164,7 +174,7 @@ class Enrollment extends Component {
                 >
                   <div className="portfolio-wrap">
                     <div className="portfolio-img">
-                      <img src="imgPNV/enroll.png" alt="Image" style={{height:"45vh", width:"60vh"}} />
+                      <img src="imgPNV/enroll.png" alt="Image" style={{height:"40vh", width:"60vh"}} />
                     </div>
                    
                   </div>
@@ -189,6 +199,9 @@ class Enrollment extends Component {
                 </div>
               </div>
             </div>
+          </div>
+
+          <Share></Share>
           </div>
         );
     }
