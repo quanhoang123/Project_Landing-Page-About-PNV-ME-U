@@ -1,6 +1,3 @@
-/*******************************/
-/********* General CSS *********/
-/*******************************/
 body {
     color: #797979;
     background: #ffffff;
@@ -440,7 +437,7 @@ a:focus {
     top: 11px;
     right: 0;
     left: -30px;
-    background: #EF233C;
+    background:  #ff9933;
     z-index: -1;
 }
 
@@ -451,7 +448,7 @@ a:focus {
     height: 3px;
     top: 11px;
     left: 3px;
-    background: #EF233C;
+    background:  #ff9933;
     z-index: 1;
 }
 
