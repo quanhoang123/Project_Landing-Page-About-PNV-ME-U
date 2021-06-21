@@ -13,8 +13,11 @@
 
 + cd back-end/fron-end: Truy cập vào 2 folder để dùng:
 + Đối với /back-end
-  1. composer instal : cài gói thư viện composer để khởi tạo serve
-  1. php artisan serve
+  1.  run composer install to generate depedencies in vendor folder
+  2.  change .env.example to .env
+  3.  run php artisan key:generate
+  4.  configure .env
+  5.  php artisan serve
 + Đối với /fron-end
   1. npm insall      : cài đặt gói # npm để khởi tạo server
   1. npm start
@@ -26,7 +29,7 @@ Hướng dẫn git branch
 * main 
 1. $ git branch namebranch : Tạo nhánh của mình
 2. $ git checkout namebranch: Chuyển qua nhánh của mình
-3. $ git add. 
+3. $ git add (file)
    $ git commit -m "content text" : Thực hiện commit trên nhánh mới
 4. $ git log --pretty=oneline : Xem lịch sử commit 
 
@@ -43,7 +46,7 @@ Hướng dẫn git branch
 3. Thực hiện chỉnh sửa.
 4. Ra folder Project_Landing-Page-About-PNV-ME-U:
 +  $ git checkout yourbranch
-+  $ git add .
++  $ git add (file)
 +  $ git commit -m "your commit"
 +  $ git push origin yourbranch (example: nhánh bạn tên là mai thì $ git push origin mai):
 PNVD167+Administrator@PNVD167 MINGW64 /c/xampp/htdocs/Project_Landing-Page-About-PNV-ME-U (main ---> your branch need push not master or main)
