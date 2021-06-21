@@ -10,7 +10,7 @@ export default class Share extends Component {
             data-wow-delay="0.1s"
           >
             <p>Cảm nhận PNV</p>
-            <h2>Chia sẻ từ sinh viên và giáo viên</h2>
+            <h2>Chia sẻ từ sinh viên, giáo viên và cựu sinh viên PNV</h2>
           </div>
           {/* <center><h2 style={{textShadow:"1px 1px 4px  #67d0f0"}}>Chia sẻ</h2></center> */}
           <div className="row">
