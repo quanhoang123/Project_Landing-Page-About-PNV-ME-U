@@ -437,7 +437,11 @@ a:focus {
     top: 11px;
     right: 0;
     left: -30px;
+<<<<<<< HEAD
     background:  #ff9933;
+=======
+    background: #ff9933;
+>>>>>>> b25adf5fd8b4cdffaf19fff9a1251ebfb29f8c9e
     z-index: -1;
 }
 
@@ -448,7 +452,11 @@ a:focus {
     height: 3px;
     top: 11px;
     left: 3px;
+<<<<<<< HEAD
     background:  #ff9933;
+=======
+    background: #ff9933;
+>>>>>>> b25adf5fd8b4cdffaf19fff9a1251ebfb29f8c9e
     z-index: 1;
 }
 
