@@ -1,18 +1,20 @@
-import React, { Component } from "react";
-
+import React, { Component ,Suspense} from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import routes from "../src/router";
-
 class App extends Component {
   render() {
     return (
+      
+      <Suspense fallback= {<div> aaa</div>} >
       <Router>
         <div>
           <Switch>
-            {this.showContentMenu(routes)}
+                {this.showContentMenu(routes)} 
+       
           </Switch>
         </div>
       </Router>
+      </Suspense>
     );
   }
   showContentMenu = (routes) => {
@@ -20,12 +22,12 @@ class App extends Component {
     if (routes.length > 0) {
       result = routes.map((route, index) => {
         return (
-          <Route
-            key={index}
-            path={route.path}
-            exact={route.exact}
-            component={route.main}
-          />
+            <Route
+                key={index}
+                path={route.path}
+                exact={route.exact}
+                component={route.main}
+            />
         );
       });
     }
