@@ -14,7 +14,7 @@
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
-        <!-- <link rel="manifest" href="%PUBLIC_URL%/manifest.json" /> -->
+        <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
 
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
         <!-- CSS Libraries -->
@@ -26,19 +26,12 @@
 
         <!-- Template Stylesheet -->
         <link href="%PUBLIC_URL%/css/style.css" rel="stylesheet">
+        <!-- Css Donation -->
+        <link rel="stylesheet" href="%PUBLIC_URL%/resource/fonts/material-icon/css/material-design-iconic-font.min.css">
+        <!-- Main css -->
+        <link rel="stylesheet" href="%PUBLIC_URL%/resource/css/style.css">
 
-
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
     <script src="%PUBLIC_URL%/lib/easing/easing.min.js"></script>
@@ -50,21 +43,53 @@
     <script src="%PUBLIC_URL%/lib/lightbox/js/lightbox.min.js"></script>
     
     <!-- Contact Javascript File -->
-    <script src="%PUBLIC_URL%/mail/jqBootstrapValidation.min.js"></script>
+    <!-- <script src="%PUBLIC_URL%/mail/jqBootstrapValidation.min.js"></script> -->
     <script src="%PUBLIC_URL%/mail/contact.js"></script>
-
-    <!-- Template Javascript -->
-    
-    
     <title>Passerelles numériques Vietnam</title>
-  </head>
+    
+
+</head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-  </body>
-  
+  </body>  
+
+        <!-- JS Dontion -->
+        <!-- <script src="%PUBLIC_URL%/resource/vendor/jquery/jquery.min.js"></script> -->
+        <script src="%PUBLIC_URL%/resource/vendor/jquery-validation/dist/jquery.validate.min.js"></script>
+        <script src="%PUBLIC_URL%/resource/vendor/jquery-validation/dist/additional-methods.min.js"></script>
+        <script src="%PUBLIC_URL%/resource/vendor/jquery-steps/jquery.steps.min.js"></script>
+        <script src="%PUBLIC_URL%/resource/vendor/minimalist-picker/dobpicker.js"></script>
+        <script src="%PUBLIC_URL%/resource/vendor/jquery.pwstrength/jquery.pwstrength.js"></script>
+        <script src="%PUBLIC_URL%/resource/js/main.js"></script> 
+        
   <script>
-      
+    jQuery(document).ready(function($) {
+        		"use strict";
+        		//  TESTIMONIALS CAROUSEL HOOK
+		        $('#customers-testimonials').owlCarousel({
+		            loop: true,
+		            center: true,
+		            items: 3,
+		            margin: 0,
+		            autoplay: true,
+		            dots:true,
+		            autoplayTimeout: 8500,
+		            smartSpeed: 450,
+		            responsive: {
+		              0: {
+		                items: 1
+		              },
+		              768: {
+		                items: 2
+		              },
+		              1170: {
+		                items: 3
+		              }
+		            }
+		        });
+    });
+
     (function ($) {
         "use strict";
         
@@ -173,6 +198,6 @@
         });
         
     })(jQuery);
-    
+  
   </script>
 </html>

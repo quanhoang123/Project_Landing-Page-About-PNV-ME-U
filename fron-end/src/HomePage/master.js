@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import Header from './header';
+import Header from '../components/header';
+import Footer from '../components/footer';
 class Master extends Component {
     render() {
         return (
@@ -315,102 +316,89 @@ class Master extends Component {
                     </div>
                 </div>
                 {/* Banner End */}
-                {/* Price Start */}
-                <div className="price" id="price">
+                {/* Testimonials Start */}
+                 <section className="testimonials">
                     <div className="container">
-                        <div className="section-header text-center wow zoomIn" data-wow-delay="0.1s">
-                            <p>Pricing Plan</p>
-                            <h2>Affordable Price</h2>
-                        </div>
                         <div className="row">
-                            <div className="col-md-4 wow fadeInUp" data-wow-delay="0.5s">
-                                <div className="price-item">
-                                    <div className="price-header">
-                                        <div className="price-title">
+                            <div className="col-sm-12">
+                                <div className="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+                                    <p>Pricing Plan</p>
+                                    <h2>Affordable Price</h2>
+                                </div>
+                                <div id="customers-testimonials" className="owl-carousel">
+                                    {/*TESTIMONIAL 1 */}
+                                    <div className="item">
+                                        <div className="shadow-effect">
                                             <h2>Basic</h2>
+                                            <div className="price-prices">
+                                                <h2><small>$</small>49<span>/ mo</span></h2>
+                                            </div>
+                                            <div className="price-description">
+                                                <ul>
+                                                    <li>Bootstrap 4</li>
+                                                    <li>Font Awesome 5</li>
+                                                    <li>Responsive Design</li>
+                                                    <li>Browser Compatibility</li>
+                                                    <li>Easy To Use</li>
+                                                </ul>
+                                            </div>
                                         </div>
-                                        <div className="price-prices">
-                                            <h2><small>$</small>49<span>/ mo</span></h2>
-                                        </div>
+                                        <div className="testimonial-name">Order Now</div>
                                     </div>
-                                    <div className="price-body">
-                                        <div className="price-description">
-                                            <ul>
-                                                <li>Bootstrap 4</li>
-                                                <li>Font Awesome 5</li>
-                                                <li>Responsive Design</li>
-                                                <li>Browser Compatibility</li>
-                                                <li>Easy To Use</li>
-                                            </ul>
+                                    {/*END OF TESTIMONIAL 1 */}
+                                    {/*TESTIMONIAL 2 */}
+                                    <div className="item">
+                                        <div className="shadow-effect">
+                                            <h2>STANDARD</h2>
+                                            <div className="price-prices">
+                                                <h2><small>$</small>99<span>/ mo</span></h2>
+                                            </div>
+                                            <div className="price-description">
+                                                <ul>
+                                                    <li>Bootstrap 4</li>
+                                                    <li>Font Awesome 5</li>
+                                                    <li>Responsive Design</li>
+                                                    <li>Browser Compatibility</li>
+                                                    <li>Easy To Use</li>
+                                                </ul>
+                                            </div>
                                         </div>
+                                        <div className="testimonial-name">Order Now</div>
                                     </div>
-                                    <div className="price-footer">
-                                        <div className="price-action">
-                                            <a className="btn" href>Order Now</a>
+                                    {/*END OF TESTIMONIAL 2 */}
+                                    {/*TESTIMONIAL 3 */}
+                                    <div className="item">
+                                        <div className="shadow-effect">
+                                            <img className="img-circle" src="http://themes.audemedia.com/html/goodgrowth/images/testimonial3.jpg" alt="" />
+                                            <p>Dramatically maintain clicks-and-mortar solutions without functional solutions. Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate.</p>
                                         </div>
+                                        <div className="testimonial-name">LARA ATKINSON</div>
                                     </div>
-                                </div>
-                            </div>
-                            <div className="col-md-4 wow fadeInUp" data-wow-delay="0.0s">
-                                <div className="price-item featured-item">
-                                    <div className="price-header">
-                                        <div className="price-title">
-                                            <h2>Standard</h2>
+                                    {/*END OF TESTIMONIAL 3 */}
+                                    {/*TESTIMONIAL 4 */}
+                                    <div className="item">
+                                        <div className="shadow-effect">
+                                            <img className="img-circle" src="http://themes.audemedia.com/html/goodgrowth/images/testimonial3.jpg" alt="" />
+                                            <p>Dramatically maintain clicks-and-mortar solutions without functional solutions. Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate.</p>
                                         </div>
-                                        <div className="price-prices">
-                                            <h2><small>$</small>99<span>/ mo</span></h2>
-                                        </div>
+                                        <div className="testimonial-name">IAN OWEN</div>
                                     </div>
-                                    <div className="price-body">
-                                        <div className="price-description">
-                                            <ul>
-                                                <li>Bootstrap 4</li>
-                                                <li>Font Awesome 5</li>
-                                                <li>Responsive Design</li>
-                                                <li>Browser Compatibility</li>
-                                                <li>Easy To Use</li>
-                                            </ul>
+                                    {/*END OF TESTIMONIAL 4 */}
+                                    {/*TESTIMONIAL 5 */}
+                                    <div className="item">
+                                        <div className="shadow-effect">
+                                            <img className="img-circle" src="http://themes.audemedia.com/html/goodgrowth/images/testimonial3.jpg" alt="" />
+                                            <p>Dramatically maintain clicks-and-mortar solutions without functional solutions. Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate.</p>
                                         </div>
+                                        <div className="testimonial-name">MICHAEL TEDDY</div>
                                     </div>
-                                    <div className="price-footer">
-                                        <div className="price-action">
-                                            <a className="btn" href>Order Now</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-md-4 wow fadeInUp" data-wow-delay="0.5s">
-                                <div className="price-item">
-                                    <div className="price-header">
-                                        <div className="price-title">
-                                            <h2>Premium</h2>
-                                        </div>
-                                        <div className="price-prices">
-                                            <h2><small>$</small>149<span>/ mo</span></h2>
-                                        </div>
-                                    </div>
-                                    <div className="price-body">
-                                        <div className="price-description">
-                                            <ul>
-                                                <li>Bootstrap 4</li>
-                                                <li>Font Awesome 5</li>
-                                                <li>Responsive Design</li>
-                                                <li>Browser Compatibility</li>
-                                                <li>Easy To Use</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div className="price-footer">
-                                        <div className="price-action">
-                                            <a className="btn" href>Order Now</a>
-                                        </div>
-                                    </div>
+                                    {/*END OF TESTIMONIAL 5 */}
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                {/* Price End */}
+                </section>
+                {/* Testimonials End */}
                 {/* Testimonial Start */}
                 <div className="testimonial wow fadeInUp" data-wow-delay="0.1s" id="review">
                     <div className="container">
@@ -458,6 +446,7 @@ class Master extends Component {
                     </div>
                 </div>
                 {/* Testimonial End */}
+               
                 {/* Team Start */}
                 <div className="team" id="team">
                     <div className="container">
@@ -640,30 +629,7 @@ class Master extends Component {
                 </div>
                 {/* Blog End */}
                 {/* Footer Start */}
-                <div className="footer wow fadeIn" data-wow-delay="0.3s">
-                    <div className="container-fluid">
-                        <div className="container">
-                            <div className="footer-info">
-                                <h2>Kate Winslet</h2>
-                                <h3>123 Street, New York, USA</h3>
-                                <div className="footer-menu">
-                                    <p>+012 345 67890</p>
-                                    <p>info@example.com</p>
-                                </div>
-                                <div className="footer-social">
-                                    <a href><i className="fab fa-twitter" /></a>
-                                    <a href><i className="fab fa-facebook-f" /></a>
-                                    <a href><i className="fab fa-youtube" /></a>
-                                    <a href><i className="fab fa-instagram" /></a>
-                                    <a href><i className="fab fa-linkedin-in" /></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="container copyright">
-                            <p>© <a href="#">Your Site Name</a>, All Right Reserved | Designed By <a href="">HTML Codex</a></p>
-                        </div>
-                    </div>
-                </div>
+                <Footer></Footer>
                 {/* Footer End */}
                 {/* Back to top button */}
                 <a href="#" className="btn back-to-top"><i className="fa fa-chevron-up" /></a>

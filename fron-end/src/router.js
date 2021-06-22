@@ -1,6 +1,6 @@
 import React from 'react';						
 
-import Master from './components/User/master';
+import Master from './HomePage/master';
 const routes = [						
 	{					
 		path : '/',				
