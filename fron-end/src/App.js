@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import routes from "../src/router";
-import Master from './components/User/master';
+
 class App extends Component {
   render() {
     return (
@@ -10,14 +10,7 @@ class App extends Component {
         <div>
           <Switch>
                 {this.showContentMenu(routes)} 
-                <Route exact path="/">               
-                </Route>  
 
-                <Route path="/index">
-                <Master />
-                </Route>
-
-               
           </Switch>
         </div>
       </Router>

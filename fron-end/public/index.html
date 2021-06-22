@@ -9,36 +9,33 @@
     <meta name="description" content="Web site created using create-react-app" />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
 
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet" />
-    <!-- CSS Libraries -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet" />
-    <link href="%PUBLIC_URL%/lib/animate/animate.min.css" rel="stylesheet" />
-    <link href="%PUBLIC_URL%/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
-    <link href="%PUBLIC_URL%/lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-    <!-- css style -->
-    <link href="%PUBLIC_URL%/css/style.css" rel="stylesheet" />
-    <!-- end css style -->
-
-
-
-
+  
     <!-- CSS ENROLLMENT -->
     <link href="%PUBLIC_URL%/css/enrollment.css" rel="stylesheet" />
       <!--  icon -->
-      <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
       <!-- icon -->
     <!--END CSS ENROLLMENT  -->
 
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- CSS Libraries -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="%PUBLIC_URL%/lib/animate/animate.min.css" rel="stylesheet">
+    <link href="%PUBLIC_URL%/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="%PUBLIC_URL%/lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="%PUBLIC_URL%/css/style.css" rel="stylesheet">
+    <!-- Css Donation -->
+    <link rel="stylesheet" href="%PUBLIC_URL%/resource/fonts/material-icon/css/material-design-iconic-font.min.css">
+    <!-- Main css -->
+    <link rel="stylesheet" href="%PUBLIC_URL%/resource/css/style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
     <script src="%PUBLIC_URL%/lib/easing/easing.min.js"></script>
@@ -50,12 +47,8 @@
     <script src="%PUBLIC_URL%/lib/lightbox/js/lightbox.min.js"></script>
 
     <!-- Contact Javascript File -->
-    <script src="%PUBLIC_URL%/mail/jqBootstrapValidation.min.js"></script>
+    <!-- <script src="%PUBLIC_URL%/mail/jqBootstrapValidation.min.js"></script> -->
     <script src="%PUBLIC_URL%/mail/contact.js"></script>
-
-    <!-- Template Javascript -->
-
-  
     <title>Passerelles numériques Vietnam</title>
 </head>
 
@@ -119,88 +112,121 @@
 
     </div>
 </body>
-
+        <!-- JS Dontion -->
+        <!-- <script src="%PUBLIC_URL%/resource/vendor/jquery/jquery.min.js"></script> -->
+        <script src="%PUBLIC_URL%/resource/vendor/jquery-validation/dist/jquery.validate.min.js"></script>
+        <script src="%PUBLIC_URL%/resource/vendor/jquery-validation/dist/additional-methods.min.js"></script>
+        <script src="%PUBLIC_URL%/resource/vendor/jquery-steps/jquery.steps.min.js"></script>
+        <script src="%PUBLIC_URL%/resource/vendor/minimalist-picker/dobpicker.js"></script>
+        <script src="%PUBLIC_URL%/resource/vendor/jquery.pwstrength/jquery.pwstrength.js"></script>
+        <script src="%PUBLIC_URL%/resource/js/main.js"></script> 
 <script>
+    jQuery(document).ready(function($) {
+        		"use strict";
+        		//  TESTIMONIALS CAROUSEL HOOK
+		        $('#customers-testimonials').owlCarousel({
+		            loop: true,
+		            center: true,
+		            items: 3,
+		            margin: 0,
+		            autoplay: true,
+		            dots:true,
+		            autoplayTimeout: 8500,
+		            smartSpeed: 450,
+		            responsive: {
+		              0: {
+		                items: 1
+		              },
+		              768: {
+		                items: 2
+		              },
+		              1170: {
+		                items: 3
+		              }
+		            }
+		        });
+    });
+
     (function ($) {
         "use strict";
-
+        
         // loader
         var loader = function () {
             setTimeout(function () {
-                if ($("#loader").length > 0) {
-                    $("#loader").removeClass("show");
+                if ($('#loader').length > 0) {
+                    $('#loader').removeClass('show');
                 }
             }, 1);
         };
         loader();
-
+        
+        
         // Initiate the wowjs
         new WOW().init();
-
+        
+        
         // Back to top button
         $(window).scroll(function () {
             if ($(this).scrollTop() > 200) {
-                $(".back-to-top").fadeIn("slow");
+                $('.back-to-top').fadeIn('slow');
             } else {
-                $(".back-to-top").fadeOut("slow");
+                $('.back-to-top').fadeOut('slow');
             }
         });
-        $(".back-to-top").click(function () {
-            $("html, body").animate({ scrollTop: 0 }, 1500, "easeInOutExpo");
+        $('.back-to-top').click(function () {
+            $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo');
             return false;
         });
-
+        
+        
         // Sticky Navbar
         $(window).scroll(function () {
             if ($(this).scrollTop() > 0) {
-                $(".navbar").addClass("nav-sticky");
+                $('.navbar').addClass('nav-sticky');
             } else {
-                $(".navbar").removeClass("nav-sticky");
+                $('.navbar').removeClass('nav-sticky');
             }
         });
-
+        
+        
         // Smooth scrolling on the navbar links
-        $(".navbar-nav a").on("click", function (event) {
+        $(".navbar-nav a").on('click', function (event) {
             if (this.hash !== "") {
                 event.preventDefault();
-
-                $("html, body").animate(
-                    {
-                        scrollTop: $(this.hash).offset().top - 45,
-                    },
-                    1500,
-                    "easeInOutExpo"
-                );
-
-                if ($(this).parents(".navbar-nav").length) {
-                    $(".navbar-nav .active").removeClass("active");
-                    $(this).closest("a").addClass("active");
+                
+                $('html, body').animate({
+                    scrollTop: $(this.hash).offset().top - 45
+                }, 1500, 'easeInOutExpo');
+                
+                if ($(this).parents('.navbar-nav').length) {
+                    $('.navbar-nav .active').removeClass('active');
+                    $(this).closest('a').addClass('active');
                 }
             }
         });
-
+        
+        
         // Typed Initiate
-        if ($(".hero .hero-text h2").length == 1) {
-            var typed_strings = $(".hero .hero-text .typed-text").text();
-            var typed = new Typed(".hero .hero-text h2", {
-                strings: typed_strings.split(", "),
+        if ($('.hero .hero-text h2').length == 1) {
+            var typed_strings = $('.hero .hero-text .typed-text').text();
+            var typed = new Typed('.hero .hero-text h2', {
+                strings: typed_strings.split(', '),
                 typeSpeed: 100,
                 backSpeed: 20,
                 smartBackspace: false,
-                loop: true,
+                loop: true
             });
         }
-
+        
+        
         // Skills
-        $(".skills").waypoint(
-            function () {
-                $(".progress .progress-bar").each(function () {
-                    $(this).css("width", $(this).attr("aria-valuenow") + "%");
-                });
-            },
-            { offset: "80%" }
-        );
-
+        $('.skills').waypoint(function () {
+            $('.progress .progress-bar').each(function () {
+                $(this).css("width", $(this).attr("aria-valuenow") + '%');
+            });
+        }, {offset: '80%'});
+    
+    
         // Testimonials carousel
         $(".testimonials-carousel").owlCarousel({
             center: true,
@@ -208,22 +234,22 @@
             dots: true,
             loop: true,
             responsive: {
-                0: {
-                    items: 1,
-                },
-            },
+                0:{
+                    items:1
+                }
+            }
         });
 
         // Portfolio filter
-        var portfolioIsotope = $(".portfolio-container").isotope({
-            itemSelector: ".portfolio-item",
-            layoutMode: "fitRows",
+        var portfolioIsotope = $('.portfolio-container').isotope({
+            itemSelector: '.portfolio-item',
+            layoutMode: 'fitRows'
         });
-
-        $("#portfolio-filter li").on("click", function () {
-            $("#portfolio-filter li").removeClass("filter-active");
-            $(this).addClass("filter-active");
-            portfolioIsotope.isotope({ filter: $(this).data("filter") });
+    
+        $('#portfolio-filter li').on('click', function () {
+            $("#portfolio-filter li").removeClass('filter-active');
+            $(this).addClass('filter-active');
+            portfolioIsotope.isotope({filter: $(this).data('filter')});
         });
     })(jQuery);
 </script>
