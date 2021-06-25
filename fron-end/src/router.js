@@ -7,8 +7,6 @@ const routes = [
 		exact : true,				
 		main : ()=> <Master />				
 	}
-					
-    
 ];						
 						
 						
