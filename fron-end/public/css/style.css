@@ -587,6 +587,8 @@ color: black;
 } 
 .contents{
     margin-top: 2vh;
+    margin-left: auto;
+
    
 }
 
@@ -595,6 +597,7 @@ color: black;
 
 .star_icon{
     color: #ff9933 ; 
+    margin-left: 1vh;
 }
 
 /* ****************************** */
