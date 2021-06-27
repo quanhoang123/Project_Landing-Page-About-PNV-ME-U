@@ -50,7 +50,7 @@ class Enrollment extends Component {
                   <h2>Đối tượng tuyển sinh</h2>
                   <div className="row contents">
                     <div className="col-sm-4" >
-                      <i class="fas fa-book-reader" style={{marginLeft:"1.5vh"}}></i>
+                      <i class="fas fa-book-reader" ></i>
                     </div>
                     <div className="col-sm-8">
                       <p style={{ marginLeft: "-12vh", marginTop: "1vh" }}>
@@ -58,7 +58,7 @@ class Enrollment extends Component {
                       </p>
                     </div>
                     <div className="col-sm-4">
-                      <i class="fa fa-home"  style={{marginLeft:"1.5vh"}}></i>
+                      <i class="fa fa-home"></i>
                     </div>
                     <div className="col-sm-8">
                       <p style={{ marginLeft: "-12vh", marginTop: "1vh" }}>
@@ -66,7 +66,7 @@ class Enrollment extends Component {
                       </p>
                     </div>
                     <div className="col-sm-4">
-                      <i class="fa fa-desktop"  style={{marginLeft:"1.5vh"}}></i>
+                      <i class="fa fa-desktop" ></i>
                     </div>
                     <div className="col-sm-8">
                       <p style={{ marginLeft: "-12vh", marginTop: "1vh" }}>
@@ -83,22 +83,28 @@ class Enrollment extends Component {
                 <div className="portfolio-wrap">
                   <h2>Cơ hội nghề nghiệp</h2>
                   <div className="enrollment contents">
-                    <p style={{marginLeft: "4vh"}}>
-                      <span class="fa fa-star star_icon"></span>
-                      Lập trình viên di động
-                    </p>
-                    <p style={{marginLeft: "4vh"}}>
-                      <span class="fa fa-star star_icon"></span>
-                      Lập trình và thiết kế web
-                    </p>
-                    <p style={{marginLeft: "4vh"}}>
-                      <span class="fa fa-star star_icon"></span>
-                      Lập trình viên phần mềm
-                    </p>
-                    <p style={{marginLeft: "4vh"}}>
-                      <span class="fa fa-star star_icon"></span>
-                      Kiểm thử viên
-                    </p>
+                      <div className="row">
+                        <div className="col-sm-4">  <span class="fa fa-star star_icon"></span></div>
+                        <div className="col-sm-8"><p style={{ marginLeft: "-11vh", marginTop: "1vh" }}>Lập trình viên di động</p></div>
+                      </div>
+                      <div className="row">
+                        <div className="col-sm-4">  <span class="fa fa-star star_icon"></span></div>
+                        <div className="col-sm-8"><p style={{ marginLeft: "-11vh", marginTop: "1vh" }}>Lập trình và thiết kế web</p></div>
+                      </div>
+                      <div className="row">
+                        <div className="col-sm-4">  <span class="fa fa-star star_icon"></span></div>
+                        <div className="col-sm-8"><p style={{ marginLeft: "-11vh", marginTop: "1vh" }}>Lập trình viên phần mềm</p></div>
+                      </div>
+                      <div className="row">
+                        <div className="col-sm-4">  <span class="fa fa-star star_icon"></span></div>
+                        <div className="col-sm-8"><p style={{ marginLeft: "-11vh", marginTop: "1vh" }}> Kiểm thử viên</p></div>
+                      </div>
+
+
+
+
+
+                   
                   </div>
                 </div>
               </div>
