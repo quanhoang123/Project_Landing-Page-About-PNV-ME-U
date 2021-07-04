@@ -1,11 +1,16 @@
 import React, { Component } from 'react';
 import Header from '../components/header';
 import Footer from '../components/footer';
+import Enroll from "../Enroll/Enroll";
+
+import Share from '../Share/Share';
+import Notificate from '../Notificate/Notificate';
 class Master extends Component {
     render() {
         return (
             <div>
                 <Header></Header>
+               
                 {/* Hero End */}
                 {/* About Start */}
                 
@@ -19,11 +24,14 @@ class Master extends Component {
                 {/* Banner Start */}
                
                 {/* Banner End */}              
-                {/* Portfolio Start */}
- 
-                {/* Portfolio End */}         
+                {/* Enroll Start */}
+ <Enroll></Enroll>
+                {/* Enroll End */}  
+                       {/*  Share*/}
+                       <Share></Share>
+                       {/* End share */}
                 {/* Banner Start */}
-  
+ 
                 {/* Banner End */}
                 {/* Sesstion Start */}
                 
@@ -44,6 +52,7 @@ class Master extends Component {
                 {/* Blog End */}
                 {/* Footer Start */}
                 <Footer></Footer>
+                <Notificate></Notificate>
                 {/* Footer End */}
                 {/* Back to top button */}
                 <a href="#" className="btn back-to-top"><i className="fa fa-chevron-up" /></a>
@@ -51,6 +60,7 @@ class Master extends Component {
                 <div id="loader" className="show">
                     <div className="loader" />
                 </div>
+                
             </div>
         );
     }
