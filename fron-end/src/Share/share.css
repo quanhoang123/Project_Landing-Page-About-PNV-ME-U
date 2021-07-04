@@ -1,0 +1,44 @@
+.share{
+    position: relative;
+    width: 100%;
+    padding: 45px 0 15px 0;
+    margin-top: 1vh;
+}
+.share_img img{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2vh;
+    border-radius: 50%;
+    width: 12vh;
+    height: 12vh;
+    object-fit: cover;
+    
+    
+}
+
+.share_img b{
+    float: right
+}
+.share_img p{
+    text-align: justify
+}
+
+#slide_img{
+    margin-top:auto;
+    
+   
+}
+
+.slider{
+    margin-left: auto;
+    margin-right: auto;
+}
+/* 
+
+.slider_img{
+    margin-top: 20vh;
+    object-fit: cover;
+    height: 70vh;
+    width: 150vh;
+} */
