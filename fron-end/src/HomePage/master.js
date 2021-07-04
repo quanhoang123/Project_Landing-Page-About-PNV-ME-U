@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
 import Header from '../components/header';
 import Footer from '../components/footer';
+import Partner from '../Partner/main_partner';
+import Local_partner from '../Partner/local_partner';
 class Master extends Component {
     render() {
         return (
             <div>
-                <Header></Header>
+                {/* <Header></Header> */}
                 {/* Hero End */}
                 {/* About Start */}
                 
@@ -42,6 +44,12 @@ class Master extends Component {
                 {/* Blog Start */}
 
                 {/* Blog End */}
+                {/* Partner Start */}
+                    <Partner />
+                    <Local_partner />
+                {/* Partner End */}
+              
+                
                 {/* Footer Start */}
                 <Footer></Footer>
                 {/* Footer End */}

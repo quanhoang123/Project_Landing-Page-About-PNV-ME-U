@@ -35,10 +35,12 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
     <script src="%PUBLIC_URL%/lib/easing/easing.min.js"></script>
+
     <script src="%PUBLIC_URL%/lib/wow/wow.min.js"></script>
     <script src="%PUBLIC_URL%/lib/waypoints/waypoints.min.js"></script>
     <script src="%PUBLIC_URL%/lib/typed/typed.min.js"></script>
     <script src="%PUBLIC_URL%/lib/owlcarousel/owl.carousel.min.js"></script>
+
     <script src="%PUBLIC_URL%/lib/isotope/isotope.pkgd.min.js"></script>
     <script src="%PUBLIC_URL%/lib/lightbox/js/lightbox.min.js"></script>
     
@@ -61,6 +63,8 @@
         <script src="%PUBLIC_URL%/resource/vendor/jquery-steps/jquery.steps.min.js"></script>
         <script src="%PUBLIC_URL%/resource/vendor/minimalist-picker/dobpicker.js"></script>
         <script src="%PUBLIC_URL%/resource/vendor/jquery.pwstrength/jquery.pwstrength.js"></script>
+
+        <!-- JS File -->
         <script src="%PUBLIC_URL%/resource/js/main.js"></script> 
         
   <script>
@@ -182,9 +186,6 @@
                 }
             }
         });
-        
-        
-        
         // Portfolio filter
         var portfolioIsotope = $('.portfolio-container').isotope({
             itemSelector: '.portfolio-item',
@@ -196,6 +197,34 @@
             $(this).addClass('filter-active');
             portfolioIsotope.isotope({filter: $(this).data('filter')});
         });
+
+           // Clients carousel (uses the Owl Carousel library) Phát
+  $(".clients-carousel").owlCarousel({
+    autoplay: true,
+    dots: true,
+    loop: true,
+    responsive: {
+      0: {
+        items: 2
+      },
+      768: {
+        items: 4
+      },
+      900: {
+        items: 6
+      }
+    }
+  });
+
+  function aos_init() {
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  }
+  $(window).on('load', function() {
+    aos_init();
+  });
         
     })(jQuery);
   
