@@ -84,7 +84,6 @@
 		// Enable Pay Now checkout flow (optional)
 		commit: true,
 		// Set up a payment
-		
 		payment: function(data, actions) {
 		return actions.payment.create({
 			transactions: [{
@@ -101,7 +100,6 @@
 			
 			// Show a confirmation message to the buyer
 			window.alert('Cảm ơn bạn đã đặt hàng thành công!');
-			
 		});
 		}
 	}, '#paypal-button');

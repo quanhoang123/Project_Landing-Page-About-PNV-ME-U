@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
 import $ from "jquery";
-import './style1.css';
+import './style.css';
 import { Link } from 'react-router-dom';
-// import Footer from '../components/footer';
-// import Header from '../components/header';
-// import { RangeStepInput } from 'react-range-step-input';
+
 import Donation_text from '../components/Content/donation-text';
 import Donation_name from '../components/Name-Staff-Donation/donation-name';
 import Button_donation from '../components/Button-pnv/button-donation';
@@ -37,14 +35,14 @@ class Donate extends Component {
         const newVal = parseInt(e.target.value);
         let other = parseInt(newVal - 100);
         let total = newVal + other;
-        
+
         this.setState({ value: newVal, hihi: other, total: total });
         console.log(e.target.value);
     }
     onHandelChange = (e) => {
         const newVal = parseInt(e.target.value);
         this.setState({ valueMonth: newVal });
-      
+
     }
     onChangeOtherAmount = (e) => {
         this.setState({ otherValue: e.target.value });
@@ -295,7 +293,6 @@ class Donate extends Component {
             { "text": "Zambia", "value": "ZM" },
             { "text": "Zimbabwe", "value": "ZW" }
         ];
-
         return (
             <div>
                 {/* <Header></Header> */}
@@ -308,7 +305,6 @@ class Donate extends Component {
                                         <div className="modal-body mb-0 p-0">
                                             <div className="embed-responsive embed-responsive-16by9 z-depth-1-half">
                                                 <iframe width="560" height="315" src="https://www.youtube.com/embed/olcVx8xnwWQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                                {/* <iframe className="embed-responsive-item" src="video/PN_Vietnam_-_Testimony_of_Huou[YoutubeMP3.vn].mp4" allowFullScreen /> */}
                                             </div>
                                         </div>
                                         <div className="modal-footer justify-content-center">
@@ -322,7 +318,7 @@ class Donate extends Component {
                                     </div>
                                 </div>
                             </div>
-                            <a><img className="img-fluid z-depth-1"  src="images/huou.jpg" alt="video of student PNV22" data-toggle="modal" data-target="#modal1" /></a>
+                            <a><img className="img-fluid z-depth-1" src="images/huou.jpg" alt="video of student PNV22" data-toggle="modal" data-target="#modal1" /></a>
                         </div>
                         <div className="col-lg-4 col-md-6 mb-4">
                             <div className="modal fade" id="modal6" tabIndex={-1} role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -331,7 +327,6 @@ class Donate extends Component {
                                         <div className="modal-body mb-0 p-0">
                                             <div className="embed-responsive embed-responsive-16by9 z-depth-1-half">
                                                 <iframe width="560" height="315" src="https://www.youtube.com/embed/NDHBdV3QUCk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                                {/* <iframe className="embed-responsive-item" src="video/Passerelles Numériques Việt Nam.mp4" allowFullScreen /> */}
                                             </div>
                                         </div>
                                         <div className="modal-footer justify-content-center">
@@ -354,7 +349,6 @@ class Donate extends Component {
                                         <div className="modal-body mb-0 p-0">
                                             <div className="embed-responsive embed-responsive-16by9 z-depth-1-half">
                                                 <iframe width="560" height="315" src="https://www.youtube.com/embed/tZPy-PjL_3U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                                {/* <iframe className="embed-responsive-item" src="https://youtu.be/tZPy-PjL_3U" allowFullScreen /> */}
                                             </div>
                                         </div>
                                         <div className="modal-footer justify-content-center">
@@ -372,7 +366,6 @@ class Donate extends Component {
                         </div>
                     </div>
                 </div>
-
                 <div className="container">
                     <Content content="You can make a difference and improve the lives of underprivileged youths by helping Passerelles numériques in many different ways"></Content>
                     <div className="donates-form container" >
@@ -402,18 +395,10 @@ class Donate extends Component {
                                                     <input type="number" min={0} max={100000} name="value" onChange={this.onChange.bind(this)} value={this.state.value} data-impact="That’s great. Thank you!" />
                                                 </strong>
                                             </div>
-                                            {/* <RangeStepInput
-                                                min={0} max={100000}
-                                                value={this.state.value} step={1}
-                                                onChange={this.onChange.bind(this)}
-                                            />
-                                            <p>{this.state.value}€</p>  */}
-                                            
                                         </div>
-
                                         <div className="form-group">
                                             <span>Other Amount</span>
-                                            <input className="col-sm-6" name="donation" type="text" id="name" name="name" required
+                                            <input className="col-sm-6" name="donation" type="text" id="otheramount" name="otheramount" required
                                                 minlength="4" maxlength="8" size="10" onChange={(e) => this.onChangeOtherAmount(e)}></input>
                                             {this.state.otherValue}$
                                         </div>
@@ -448,7 +433,7 @@ class Donate extends Component {
                                         <h4>My detail</h4>
                                     </div>
                                     <div id="content-detail" >
-                                            <h6 className="col">I already have a HelloAsso account
+                                        <h6 className="col">I already have a HelloAsso account
                                         </h6>
                                         <section id="tabs" className="project-tab">
                                             <div className="container">
@@ -461,7 +446,7 @@ class Donate extends Component {
                                                             </div>
                                                         </nav>
                                                         <div className="tab-content" id="nav-tabContent">
-                                                        <br></br>
+                                                            <br></br>
                                                             <div className="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
 
                                                                 <div className="form-group">
@@ -474,10 +459,7 @@ class Donate extends Component {
                                                                 <div className="form-group" >
                                                                     <input type="text" name="address" id="address" placeholder="Street adsress *" />
                                                                 </div>
-                                                                <div className="form-group" >
-                                                                    <input type="text" name="dayofbirth" id="dayofbirth" className="col-sm-5" placeholder="Day of Birth" />
-                                                                    <input type="text" name="zipCode" id="zipCode" className="col" placeholder="ZIP code *" />
-                                                                </div>
+
                                                                 <div className="form-group" >
                                                                     <input type="text" name="city" id="city" className="col" placeholder="city" />
                                                                     <select className="col-sm-6">
@@ -503,10 +485,7 @@ class Donate extends Component {
                                                                 <div className="form-group" >
                                                                     <input type="text" name="address" id="address" placeholder="Street adsress *" />
                                                                 </div>
-                                                                <div className="form-group" >
-                                                                    <input type="text" name="dayofbirth" id="dayofbirth" className="col-sm-5" placeholder="Day of Birth" />
-                                                                    <input type="text" name="zipCode" id="zipCode" className="col" placeholder="ZIP code *" />
-                                                                </div>
+
                                                                 <div className="form-group" >
                                                                     <input type="text" name="city" id="city" className="col" placeholder="city" />
                                                                     <select className="col-sm-6">
@@ -528,7 +507,6 @@ class Donate extends Component {
                                         <h4 style={{ textAlign: 'center' }}>Contact</h4>
                                         <p>Passerelles numériques VietNam</p>
                                         <p>99 Tô Hiến Thành, Đà Nẵng</p>
-
                                     </div>
                                 </div>
                                 <div className="col-sm-4 " id="sumary-donation">
@@ -537,39 +515,25 @@ class Donate extends Component {
                                     </div>
                                     <div className=" col" id="content-sumary">
                                         <h6 style={{ textAlign: 'center' }}> Sumary</h6>
-                                        <table border="1" style={{ width: '300px' }}>
+                                        <table border='1px' style={{ width: '300px' }}>
                                             <thead>
                                                 <tr>
                                                     <th>Selection</th>
-                                                    <th>Donation</th>
+                                                    <th >Donation</th>
                                                 </tr>
                                             </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>
-                                                        Donation
-                                                    </td>
-                                                    <td >
-                                                        {this.state.value}€
-                                                    </td>
-
+                                            <tbody >
+                                                <tr >
+                                                    <td>Donation</td>
+                                                    <td>{this.state.value}€</td>
                                                 </tr>
                                                 <tr>
-                                                    <td>
-                                                        Your contribution to the functioning of HelloAsso.
-                                                        <a ></a>
-                                                    </td>
-                                                    <td >
-                                                        {this.state.hihi}€
-                                                    </td>
+                                                    <td>Your contribution to the functioning of HelloAsso.<a ></a></td>
+                                                    <td >{this.state.hihi}€</td>
                                                 </tr>
                                                 <tr>
-                                                    <td>
-                                                        Total
-                                                    </td>
-                                                    <td>
-                                                        {this.state.total}€
-                                                    </td>
+                                                    <td>Total</td>
+                                                    <td>{this.state.total}€</td>
                                                 </tr>
                                             </tbody>
                                         </table>
@@ -583,29 +547,28 @@ class Donate extends Component {
                                             <input type="checkbox" name="agree" className="col-sm-1" />
                                             <span >I understand and I confirm that I want to provide financial support to HelloAsso by finalizing my paymen</span>
                                         </div>
-
+                                        <div className="form-group">
+                                            <div className="form-radio-flex col">
+                                                <input type="radio" name="payment_type" id="payment_visa" defaultValue="payment_visa" defaultChecked="checked" />
+                                                <label htmlFor="payment_visa"><img src="resource/images/icon-visa.png" alt="" /></label>
+                                                <input type="radio" name="payment_type" id="payment_master" defaultValue="payment_master" />
+                                                <label htmlFor="payment_master"><img src="resource/images/icon-master.png" alt="" /></label>
+                                                <input type="radio" name="payment_type" id="payment_paypal" defaultValue="payment_paypal" />
+                                                <label htmlFor="payment_paypal"><img src="resource/images/icon-paypal.png" alt="" /></label>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div className="form-group">
-                                        <button type="submit" className="col btn-footer "> Validate and pay <p><small>100% secured payment </small></p>  </button>
+                                        <button type="submit" className="col " id="paypal-button"> <p><small>100% secured payment </small></p>  </button>
                                     </div>
                                     <div className="reason">
                                     </div>
                                 </div>
                             </div>
                             <div className="row" id="payment-method">
-                                <div className="form-group">
-                                    <div className="form-radio-flex col">
-                                        <input type="radio" name="payment_type" id="payment_visa" defaultValue="payment_visa" defaultChecked="checked" />
-                                        <label htmlFor="payment_visa"><img src="resource/images/icon-visa.png" alt="" /></label>
-                                        <input type="radio" name="payment_type" id="payment_master" defaultValue="payment_master" />
-                                        <label htmlFor="payment_master"><img src="resource/images/icon-master.png" alt="" /></label>
-                                        <input type="radio" name="payment_type" id="payment_paypal" defaultValue="payment_paypal" />
-                                        <label htmlFor="payment_paypal"><img src="resource/images/icon-paypal.png" alt="" /></label>
-                                    </div>
-                                </div>
                                 <div className="form-group col " >
-                                    <p ><p><small><i className="fa fa-lock lock">100% secured payment
-                                    </i></small></p>All your bank details are completely secured throughout the payment process. The data is encrypted with SSL and we guarantee the safe treatment of your transaction.</p>
+                                    <p><p style={{textAlign:'center'}}><i className="fa fa-lock lock">100% secured payment
+                                    </i></p>All your bank details are completely secured throughout the payment process. The data is encrypted with SSL and we guarantee the safe treatment of your transaction.</p>
                                 </div>
                             </div>
                         </form>
@@ -618,7 +581,7 @@ class Donate extends Component {
                     <div className="row">
                         <div className="col-sm-4">
                             <div className="card">
-                            <Image_component image="img/about.jpg"></Image_component>
+                                <Image_component image="images/quan.jpg"></Image_component>
                                 <div className="card-body">
                                     <Donation_text content="Before joining PNV,
                                         all of my relatives disapproved my wish to come here to study as they thought IT was not suitable for a girl.
@@ -632,7 +595,7 @@ class Donate extends Component {
                         </div>
                         <div className="col-sm-4">
                             <div className="card">
-                            <Image_component image="img/about.jpg"></Image_component>
+                                <Image_component image="images/duong.jpg"></Image_component>
                                 <div className="card-body">
                                     <Donation_text content="There was a huge change in my life after PN.
                                         I realized that I am capable of doing something bigger!
@@ -649,7 +612,7 @@ class Donate extends Component {
                         </div>
                         <div className="col-sm-4">
                             <div className="card">
-                                <Image_component image="img/about.jpg"></Image_component>
+                                <Image_component image="images/phat.jpg"></Image_component>
                                 <div className="card-body">
                                     <Donation_text content="PN Cambodia has given me great training & education!
                                         I am not sure I could find that anywhere else.
@@ -687,12 +650,10 @@ $(document).ready(function () {
         var other = $(this).hide().siblings("#other-input");
         other.show();
         other.find("input").focus();
-
     });
 });
 
 $(document).ready(function () {
-
     $("#donate-button").on("click", ".btn-blue", function (e) {
         e.preventDefault();
         $(".active").removeClass("active");
@@ -703,7 +664,6 @@ $(document).ready(function () {
             .closest("div")
         $("#other-input").find("input").val("");
     });
-
     $("#other1").on("click", function (e) {
         e.preventDefault();
         var buttons = $(this).parent("#donate-button");
@@ -711,7 +671,6 @@ $(document).ready(function () {
         var other = $(this).hide().siblings("#other-input1");
         other.show();
         other.find("input").focus();
-
     });
 });
 
