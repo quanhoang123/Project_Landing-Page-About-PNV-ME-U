@@ -21,6 +21,7 @@
                                     <div class="card-header"><h3 class="text-center font-weight-light my-4">Login</h3></div>
                                     <div class="card-body">
                                         <form>
+                                            {{csrf_field()}}
                                             <div class="form-floating mb-3">
                                                 <input class="form-control" id="inputEmail" type="email" placeholder="name@example.com" />
                                                 <label for="inputEmail">Email address</label>
@@ -40,7 +41,7 @@
                                         </form>
                                     </div>
                                     <div class="card-footer text-center py-3">
-                                        <div class="small"><a href="register.html">Need an account? Sign up!</a></div>
+                                        <div class="small"><a href="signup">Need an account? Sign up!</a></div>
                                     </div>
                                 </div>
                             </div>

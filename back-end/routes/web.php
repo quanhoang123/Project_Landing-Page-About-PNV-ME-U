@@ -22,6 +22,9 @@ Route::get('/admin', function () {
 Route::get('/login', function () {
     return view('Admin.Page.login');
 });
+Route::get('/signup', function () {
+    return view('Admin.Page.signup');
+});
 Route::get('/table', function () {
     return view('Admin.Page.table');
 });
