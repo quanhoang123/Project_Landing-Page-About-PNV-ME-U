@@ -1099,30 +1099,29 @@ a:focus {
 
 .team .team-item {
     position: relative;
-    background: #ffffff;
+    /* background: #ffffff; */
     margin-bottom: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
+    display: flex; 
+    align-items: center; 
+    /* justify-content: flex-start;  */
     box-shadow: inset 0 0 0 0 transparent;
-    transition: ease-out 0.5s;
-}
+    transition: ease-out 0.5s; 
+ } 
 
-.team .team-img {
+ .team .team-img {
     position: relative;
-    width: 50%;
     overflow: hidden;
-}
+} 
 
 .team .team-img img {
     position: relative;
     width: 100%;
     transition: .5s;
-}
+} 
 
 .team .team-text {
     position: relative;
-    width: 50%;
+    /* width: 50%; */
     padding: 0 30px;
 }
 
@@ -1165,9 +1164,6 @@ a:focus {
     margin-right: 5px;
 }
 
-.team .team-item:hover {
-    box-shadow: inset 800px 0 0 0 #EF233C;
-}
 
 .team .team-item:hover .team-img img {
     transform: scale(1.2);
